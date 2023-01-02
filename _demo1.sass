@@ -1,0 +1,29 @@
+#demo1
+    .minibox
+        width: 300px
+        height: 300px
+        border: 2px solid #d11212
+        transition: 3s
+        &:hover
+            width: 500px
+            border: 10px solid #000000
+
+    @media screen and ( max-width: 576px  )
+        .minibox
+            width: 100px
+            height: 100px
+            border: 2px solid #050505
+            transition: 3s
+        &:hover
+            width: 150px
+            border: 10px solid #288d55
+    @media screen and ( max-width: 762px)
+                .minibox
+            width: 150px
+            height: 150px
+            border: 2px solid #050505
+            transition: 3s
+        &:hover
+            width: 200px
+            border: 10px solid #288d55
+        

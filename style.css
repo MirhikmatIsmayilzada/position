@@ -1,13 +1,126 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
-a {
-  color: orange;
+section {
+  padding: 80px 0;
 }
 
-a:hover {
-  color: black;
+.imgbox {
+  overflow: hidden;
 }
-/*# sourceMappingURL=style.css.map */
+.imgbox img {
+  width: 100%;
+}
+
+#demo1 .minibox {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #d11212;
+  transition: 3s;
+}
+#demo1 .minibox:hover {
+  width: 500px;
+  border: 10px solid #000000;
+}
+@media screen and (max-width: 576px) {
+  #demo1 .minibox {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #050505;
+    transition: 3s;
+  }
+  #demo1:hover {
+    width: 100px;
+    border: 10px solid #288d55;
+  }
+}
+#demo2 .minibox {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000000;
+  transition: 3s;
+}
+#demo2 .minibox:hover {
+  width: 300px;
+  background-color: #00ff00;
+}
+
+#demo3 .minibox {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f3f707;
+  display: inline-block;
+  transition: 3s;
+}
+#demo3 .minibox:hover {
+  border-radius: 50px;
+  background-color: #2500ac;
+}
+#demo3 .minibox2 {
+  transform: translate(500px, 100px);
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f3f707;
+  transition: 3s;
+}
+#demo3 .minibox2:hover {
+  background-color: #c53232;
+  border-radius: 50px;
+}
+
+#demo4 .textbox .btn {
+  background-color: #00ff00;
+  padding: 20px 40px;
+  font-size: 40px;
+  transition: 2s;
+}
+#demo4 .textbox .btn span {
+  display: none;
+}
+#demo4 .textbox .btn:hover {
+  color: white;
+  background-color: black;
+}
+#demo4 .textbox .btn:hover span {
+  display: block;
+  font-size: 40px;
+}
+
+#demo5 .textbox {
+  border: 1px solid #ffffff;
+  flex-direction: column;
+}
+#demo5 .textbox .btn {
+  margin: 50px 0;
+  padding: 40px 40px;
+  background-color: #e4e4e4;
+  transition: 2s;
+}
+#demo5 .textbox .btn:hover {
+  border-radius: 50px;
+  background-color: #00eeff;
+  font-size: 50px;
+}
+
+#demo6 .minibox {
+  border: 5px solid #000000;
+  width: 100px;
+  height: 100px;
+  background-color: #aeb100;
+  transition: 2s;
+}
+#demo6 .minibox h4 {
+  opacity: 0;
+}
+#demo6 .minibox:hover {
+  width: 300px;
+  height: 300px;
+  background-color: #25e61e;
+}
+#demo6 .minibox:hover h4 {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */
