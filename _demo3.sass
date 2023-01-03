@@ -2,18 +2,62 @@
     .minibox
         width: 100px
         height: 100px
-        border: 2px solid #f3f707
+        border: 10px solid #f3f707
         display: inline-block
         transition: 3s
         &:hover
             border-radius: 50px
             background-color: #2500ac
-    .minibox2
+    .other
         transform: translate(500px,100px)
-        width: 100px
-        height: 100px
-        border: 2px solid #f3f707
-        transition: 3s
         &:hover
             background-color: #c53232
             border-radius: 50px
+
+    @media screen and ( min-width: 576px )
+        .minibox
+            width: 150px
+            height: 150px
+            border: 7px solid #24c51f
+            display: inline-block
+            transition: 3s
+            border-radius: 50px
+            &:hover
+                border-radius: 50px
+                background-color: #2500ac
+        .other
+            transform: translate(500px,100px)
+            &:hover
+                background-color: #1b0e0e
+                border-radius: 50px
+    @media screen and ( min-width: 768px )
+        .minibox
+            width: 200px
+            height: 200px
+            border: 5px solid #f3f707
+            display: inline-block
+            transition: 3s
+            &:hover
+                border-radius: 50px
+                background-color: #2500ac
+        .other
+            transform: translate(500px,100px)
+            &:hover
+                background-color: #c53232
+                border-radius: 50px
+    @media screen and ( min-width: 992px )
+        .minibox
+            width: 300px
+            height: 300px
+            border: 2px solid #07eff7
+            display: inline-block
+            transition: 3s
+            border-radius: 50px
+            &:hover
+                border-radius: 50px
+                background-color: #5c5186
+        .other
+            transform: translate(500px,100px)
+            &:hover
+                background-color: #ffff00
+                border-radius: 50px

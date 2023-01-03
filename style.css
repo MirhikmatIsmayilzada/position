@@ -15,42 +15,125 @@ section {
 }
 
 #demo1 .minibox {
-  width: 300px;
-  height: 300px;
-  border: 2px solid #d11212;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #d11212;
   transition: 3s;
+  font-size: 30px;
 }
 #demo1 .minibox:hover {
-  width: 500px;
-  border: 10px solid #000000;
+  width: 130px;
+  border: 10px solid #007de4;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
   #demo1 .minibox {
     width: 100px;
     height: 100px;
-    border: 2px solid #050505;
+    border: 3px solid #050505;
     transition: 3s;
+    font-size: 50px;
   }
-  #demo1:hover {
-    width: 100px;
-    border: 10px solid #288d55;
+  #demo1 .minibox:hover {
+    width: 200px;
+    border: 10px solid #00ff73;
   }
 }
+@media screen and (min-width: 768px) {
+  #demo1 .minibox {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #bbff01;
+    transition: 3s;
+    font-size: 70px;
+  }
+  #demo1 .minibox:hover {
+    width: 300px;
+    border: 10px solid #8d2888;
+  }
+}
+@media screen and (min-width: 992px) {
+  #demo1 .minibox {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #887539;
+    transition: 3s;
+    font-size: 90px;
+  }
+  #demo1 .minibox:hover {
+    width: 400px;
+    border: 10px solid #547964;
+  }
+}
+
 #demo2 .minibox {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #000000;
   transition: 3s;
+  font-size: 30px;
+  color: #e60000;
 }
 #demo2 .minibox:hover {
-  width: 300px;
+  border-radius: 50px;
+  width: 100px;
   background-color: #00ff00;
+}
+#demo2 .other:hover {
+  transform: translate(300px, 300px);
+}
+#demo2 .other2:hover {
+  opacity: 0;
+}
+@media screen and (min-width: 576px) {
+  #demo2 .minibox {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #caeb12;
+    transition: 3s;
+    font-size: 50px;
+    color: rgba(11, 202, 68, 0.7882352941);
+    background-color: #2724ce;
+  }
+  #demo2 .minibox:hover {
+    width: 200px;
+    background-color: #a03434;
+  }
+}
+@media screen and (min-width: 768px) {
+  #demo2 .minibox {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ff00f2;
+    transition: 3s;
+    font-size: 70px;
+    color: #28ffdb;
+    background-color: #971212;
+  }
+  #demo2 .minibox:hover {
+    width: 250px;
+    background-color: #a6ff00;
+  }
+}
+@media screen and (min-width: 992px) {
+  #demo2 .minibox {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000000;
+    transition: 3s;
+    font-size: 90px;
+    color: #814c4c;
+    background-color: #b5cf21;
+  }
+  #demo2 .minibox:hover {
+    width: 300px;
+    background-color: #00ff00;
+  }
 }
 
 #demo3 .minibox {
   width: 100px;
   height: 100px;
-  border: 2px solid #f3f707;
+  border: 10px solid #f3f707;
   display: inline-block;
   transition: 3s;
 }
@@ -58,16 +141,74 @@ section {
   border-radius: 50px;
   background-color: #2500ac;
 }
-#demo3 .minibox2 {
+#demo3 .other {
   transform: translate(500px, 100px);
-  width: 100px;
-  height: 100px;
-  border: 2px solid #f3f707;
-  transition: 3s;
 }
-#demo3 .minibox2:hover {
+#demo3 .other:hover {
   background-color: #c53232;
   border-radius: 50px;
+}
+@media screen and (min-width: 576px) {
+  #demo3 .minibox {
+    width: 150px;
+    height: 150px;
+    border: 7px solid #24c51f;
+    display: inline-block;
+    transition: 3s;
+    border-radius: 50px;
+  }
+  #demo3 .minibox:hover {
+    border-radius: 50px;
+    background-color: #2500ac;
+  }
+  #demo3 .other {
+    transform: translate(500px, 100px);
+  }
+  #demo3 .other:hover {
+    background-color: #1b0e0e;
+    border-radius: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #demo3 .minibox {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #f3f707;
+    display: inline-block;
+    transition: 3s;
+  }
+  #demo3 .minibox:hover {
+    border-radius: 50px;
+    background-color: #2500ac;
+  }
+  #demo3 .other {
+    transform: translate(500px, 100px);
+  }
+  #demo3 .other:hover {
+    background-color: #c53232;
+    border-radius: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #demo3 .minibox {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #07eff7;
+    display: inline-block;
+    transition: 3s;
+    border-radius: 50px;
+  }
+  #demo3 .minibox:hover {
+    border-radius: 50px;
+    background-color: #5c5186;
+  }
+  #demo3 .other {
+    transform: translate(500px, 100px);
+  }
+  #demo3 .other:hover {
+    background-color: #ffff00;
+    border-radius: 200px;
+  }
 }
 
 #demo4 .textbox .btn {
